@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midpoint Integration!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h1 class="site-title">
+          <a href="index.html">Handy-Dandy Numerical Integration Calculator!</a>
+        </h1>
+        <ul class="method-links">
+          <li><a href="midpoint.html">Midpoint Rule</a></li>
+          <li><a href="trapz.html">Trapezoid Rule</a></li>
+          <li><a href="simps.html">Simpsons Rule</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="form-container">
+      <form id="mpint" class="user-inputs">
+
+        <h1>Calculating Midpoint Integration for x<sup>2</sup>!</h1>
+        
+        <label for="lower-limit">Enter the lower limit of integration:</label>
+        <input
+          type="number"
+          name="lowerLimit"
+          id="lower-limit"
+          placeholder="Lower Limit = 69"
+          required
+        />
+
+        <label for="upper-limit">Enter the upper limit of integration:</label>
+        <input
+          type="number"
+          name="upperLimit"
+          id="upper-limit"
+          placeholder="Upper Limit = 420"
+          required
+        />
+
+        <label for="subintervals"
+          >Enter the number of desired subintervals:</label
+        >
+        <input
+          type="number"
+          name="subIntervals"
+          id="subintervals"
+          placeholder="Subintervals: 8"
+          required
+        />
+
+        <input class="form-button" type="submit" value="Integrate!">
+
+        <h1 id="integrated-value">Final Value: </h1>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
