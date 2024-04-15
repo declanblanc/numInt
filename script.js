@@ -3,6 +3,7 @@ let mpform = document.getElementById("mpint");
 let tpform = document.getElementById("tpint");
 let spform = document.getElementById("spint");
 let currentPage = window.location.pathname;
+console.log(currentPage);
 
 function setFinalValue(mpResult) {
   let valueText = calculatedVal.innerText.split(":");
