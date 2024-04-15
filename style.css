@@ -16,6 +16,8 @@ body {
   transition: all .4s;
 }
 
+
+
 .site-title:hover {
 
   font-size: 2.1rem;
@@ -50,11 +52,19 @@ nav {
   box-shadow: 0em .5em .5em rgba(0, 0, 0, 0.5);
 }
 
-/* nav div {
-  width: 75vw;
-} */
+img {
+  height: 8rem;
+  left: 80%;
+  bottom: 5%;
+  position: absolute;
+  z-index: -1;
+  padding: none;
+}
+
 
 .form-container {
+  position:absolute;
+  z-index: 1;
   height: 75vh;
   width: inherit;
   display: flex;
@@ -71,6 +81,8 @@ nav {
 }
 
 .user-inputs {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,7 +165,8 @@ nav {
 
 .desc {
   font-family: "Ubuntu",sans-serif;
+  color: aqua;
   font-size: 1.5rem;
   font-weight: 800;
-  text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
 }

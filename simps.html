@@ -29,10 +29,14 @@
       </div>
     </nav>
     <div class="form-container">
+      
       <form id="spint" class="user-inputs">
-
+        <img
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f66d2907-aa4d-4b46-860d-31d0cd708a55/dfq22ha-e46dd620-88b0-441e-be50-26c36bb55971.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y2NmQyOTA3LWFhNGQtNGI0Ni04NjBkLTMxZDBjZDcwOGE1NVwvZGZxMjJoYS1lNDZkZDYyMC04OGIwLTQ0MWUtYmU1MC0yNmMzNmJiNTU5NzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5EyrxPLSSzQeXPNbtm4NoNgOy1n-fJp23Vvj3_Jklwg"
+          alt="Image of bart simpson jumping."
+        />
         <h1>Calculating Simpsons Integration for x<sup>2</sup>!</h1>
-        
+
         <label for="lower-limit">Lower Limit:</label>
         <input
           type="number"
@@ -51,9 +55,7 @@
           required
         />
 
-        <label for="subintervals"
-          >Number of Subintervals:</label
-        >
+        <label for="subintervals">Number of Subintervals:</label>
         <input
           type="number"
           step="2"
@@ -65,11 +67,12 @@
           oninvalid="this.setCustomValidity('Please enter a number! For simpsons rule, number must be even!')"
         />
 
-        <input class="form-button" type="submit" value="Integrate!">
+        <input class="form-button" type="submit" value="Integrate!" />
 
-        <h1 id="integrated-value">Final Value: </h1>
+        <h1 id="integrated-value">Answer:</h1>
       </form>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
