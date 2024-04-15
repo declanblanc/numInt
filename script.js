@@ -3,13 +3,12 @@ let mpform = document.getElementById("mpint");
 let tpform = document.getElementById("tpint");
 let spform = document.getElementById("spint");
 let currentPage = window.location.pathname;
-console.log(currentPage);
 
 function setFinalValue(mpResult) {
   let valueText = calculatedVal.innerText.split(":");
   calculatedVal.innerText = `${valueText[0]}: ${mpResult}`;
 }
-if (currentPage === "/midpoint.html") {
+if (currentPage.includes("midpoint.html")) {
   mpform.addEventListener("submit", (e) => {
     // preventDefault stops the form submission from performing its default actions, specifically in this
     // case we want to stop it from reloading the page when the form is submitted
@@ -70,7 +69,7 @@ if (currentPage === "/midpoint.html") {
   });
 }
 
-if (currentPage === "/trapz.html"){
+if (currentPage.includes("trapz.html")){
   tpform.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -104,7 +103,7 @@ if (currentPage === "/trapz.html"){
     setFinalValue(tpResult);
   });
 }
-if (currentPage === "/simps.html") {
+if (currentPage.includes("simps.html")) {
   spform.addEventListener("submit", (e) => {
     e.preventDefault();
 
