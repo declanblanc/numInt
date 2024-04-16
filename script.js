@@ -26,6 +26,7 @@ if (currentPage.includes("midpoint.html")) {
     // now we create variables for each piece of user input and
     // cast the variables into integers by surrounding them with
     // Number()
+    let equation = math.compile(formVars.userEquation);
     let lowerLimit = Number(formVars.lowerLimit);
     let upperLimit = Number(formVars.upperLimit);
     let subIntervals = Number(formVars.subIntervals);
@@ -58,7 +59,7 @@ if (currentPage.includes("midpoint.html")) {
         // here eq is performing our f(x), in this case x^2, I chose not to
         // calculate the multiplication with delta x at each step but rather when
         // the loop is complete just multiply delta x with the final value of eq
-        eq += currentMid * currentMid;
+        eq += equation.evaluate({x:currentMid});
 
         // to increment our pointers left becomes the value of right, and right
         // increases based on the value of delta x
@@ -88,6 +89,7 @@ if (currentPage.includes("trapz.html")) {
     // pairs in the formdata we took in the last step.
     let formVars = Object.fromEntries(numbers.entries());
 
+    let equation = math.compile(formVars.userEquation);
     let upperLimit = Number(formVars.upperLimit);
     let lowerLimit = Number(formVars.lowerLimit);
     let subIntervals = Number(formVars.subIntervals);
@@ -104,9 +106,9 @@ if (currentPage.includes("trapz.html")) {
 
       while (point <= upperLimit) {
         if (point === lowerLimit || point === upperLimit) {
-          eq += point * point;
+          eq += equation.evaluate({x:point});
         } else {
-          eq += 2 * (point * point);
+          eq += 2 * equation.evaluate({x:point});
         }
         point += h;
       }
@@ -128,6 +130,7 @@ if (currentPage.includes("simps.html")) {
     // pairs in the formdata we took in the last step.
     let formVars = Object.fromEntries(numbers.entries());
 
+    let equation = math.compile(formVars.userEquation);
     let upperLimit = Number(formVars.upperLimit);
     let lowerLimit = Number(formVars.lowerLimit);
     let subIntervals = Number(formVars.subIntervals);
@@ -151,11 +154,11 @@ if (currentPage.includes("simps.html")) {
         }
 
         if (point === lowerLimit || point === upperLimit) {
-          eq += point * point;
+          eq += equation.evaluate({x:point});
         } else if (xPlaceEven) {
-          eq += 2 * (point * point);
+          eq += 2 * equation.evaluate({x:point});
         } else if (!xPlaceEven) {
-          eq += 4 * (point * point);
+          eq += 4 * equation.evaluate({x:point});
         }
 
         point += h;
@@ -163,7 +166,7 @@ if (currentPage.includes("simps.html")) {
       }
       let spResult = (h / 3) * eq;
       setFinalValue(spResult);
-    }
+    } 
   });
 }
 

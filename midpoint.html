@@ -31,8 +31,17 @@
     <div class="form-container">
       <form id="mpint" class="user-inputs">
 
-        <h1>Calculating Midpoint Integration for x<sup>2</sup>!</h1>
+        <h1>Midpoint Integration!</h1>
         
+        <label for="user-func">Function Equation:</label>
+        <input
+          name="userEquation"
+          id="user-eq"
+          placeholder="sqrt(sin(x)+5x^2)"
+          required
+        />
+
+
         <label for="lower-limit">Lower Limit:</label>
         <input
           type="number"
@@ -67,6 +76,7 @@
         <h1 id="integrated-value">Answer: </h1>
       </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

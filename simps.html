@@ -35,7 +35,15 @@
           src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f66d2907-aa4d-4b46-860d-31d0cd708a55/dfq22ha-e46dd620-88b0-441e-be50-26c36bb55971.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y2NmQyOTA3LWFhNGQtNGI0Ni04NjBkLTMxZDBjZDcwOGE1NVwvZGZxMjJoYS1lNDZkZDYyMC04OGIwLTQ0MWUtYmU1MC0yNmMzNmJiNTU5NzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5EyrxPLSSzQeXPNbtm4NoNgOy1n-fJp23Vvj3_Jklwg"
           alt="Image of bart simpson jumping."
         />
-        <h1>Calculating Simpsons Integration for x<sup>2</sup>!</h1>
+        <h1>Simpsons Integration!</h1>
+
+        <label for="user-func">Function Equation:</label>
+        <input
+          name="userEquation"
+          id="user-eq"
+          placeholder="sqrt(sin(x)+5x^2)"
+          required
+        />
 
         <label for="lower-limit">Lower Limit:</label>
         <input
@@ -72,7 +80,7 @@
         <h1 id="integrated-value">Answer:</h1>
       </form>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
