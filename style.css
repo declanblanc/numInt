@@ -4,16 +4,16 @@
   --secondary-color: #26e3dd;
   --accent-color: #5226e3;
   --font-color: #26ade3;
- }
- 
- body {
+}
+
+body {
   background-color: rgb(57, 58, 70);
   height: 100vh;
   width: 100vw;
   --bg-color: white;
- }
- 
- .site-title {
+}
+
+.site-title {
   color: rgb(118, 171, 174);
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
@@ -21,19 +21,19 @@
   text-align: center;
   padding: 1rem 0;
   transition: all 0.4s;
- }
- 
- .site-title:hover {
+}
+
+.site-title:hover {
   transform: scale(1.02);
   color: rgb(238, 238, 238);
- }
- 
- a {
+}
+
+a {
   text-decoration: none;
   color: inherit;
- }
- 
- nav {
+}
+
+nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,17 +41,17 @@
   background-color: rgb(34, 40, 49);
   height: fit-content;
   box-shadow: 0em 0.5em 0.5em rgba(0, 0, 0, 0.5);
- }
- 
- img {
+}
+
+img {
   height: 8rem;
   left: 80%;
   bottom: 5%;
   position: absolute;
   z-index: -1;
- }
- 
- .form-container {
+}
+
+.form-container {
   position: absolute;
   z-index: 1;
   height: 75vh;
@@ -59,16 +59,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
- }
- 
- .form-container h1 {
+}
+
+/* .form-container h1 {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   padding: 2rem;
   font-size: 1.5rem;
- }
- 
- .user-inputs {
+} */
+
+.form-container h1 {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(0, 138, 138);
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-inputs {
   position: relative;
   z-index: 1;
   display: flex;
@@ -80,40 +90,47 @@
   background-color: rgb(238, 238, 238);
   border-radius: 25px;
   box-shadow: 9px 10px 11px rgba(0, 0, 0, 0.5);
- }
- 
- .user-inputs label {
+}
+
+.user-inputs label {
   text-align: center;
   font-weight: bolder;
   font-family: "Ubuntu", sans-serif;
   color: rgb(118, 171, 174);
   padding: 5px;
- }
- 
- .user-inputs input {
+}
+
+.user-inputs input {
   text-align: center;
   height: 1.5rem;
   width: 10rem;
   font-family: "Ubuntu", sans-serif;
   border-color: rgb(118, 171, 174);
   border-radius: 5px;
- }
- 
- .form-button {
+}
+
+.form-button {
   margin-top: 1rem;
   color: white;
   font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
   border-radius: 5px;
   border-width: 2px;
+  min-width: 150px;
+  min-height: 50px;
   background-color: rgb(34, 40, 49);
   transition: all 0.4s;
- }
- 
- .form-button:hover {
-  background-color: rgb(118, 171, 174);
- }
- 
- .method-links {
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:hover {
+  background-color: rgb(50, 60, 70);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.method-links {
   font-family: "Ubuntu", sans-serif;
   color: white;
   font-size: 1.2rem;
@@ -122,40 +139,42 @@
   padding-bottom: 0.75rem;
   flex-direction: row;
   justify-content: space-between;
- }
- 
- .method-links li {
+}
+
+.method-links li {
   transition: all 0.4s;
- }
- 
- .method-links li:hover {
-  transform: scale(1.05);
-  color: rgb(170, 170, 170);
- }
- 
- .desc-box {
+}
+
+.method-links li:hover {
+  transform: translateY(-2px);
+  /* transform: scale(1.05); */
+  color: rgb(205, 205, 205);
+}
+
+.desc-box {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
   padding: 1rem;
   border: 5px solid aqua;
- }
- 
- .desc, .abt-page {
+}
+
+.desc,
+.abt-page {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   color: aqua;
   font-size: 1.5rem;
   font-weight: 800;
   text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
- }
- 
- .abt-page {
+}
+
+.abt-page {
   padding-top: 20rem;
- }
- 
- .abt-page a {
-  color: #2b30b6;
+}
+
+.abt-page a {
+  color: #ffffff;
   text-decoration: underline;
- }
+}
