@@ -1,6 +1,7 @@
-# numInt
-This is a Numerical Integration calculator I developed for Professor Nikitovic's Calculus 2 course at Raritan Valley Community College. This is my first project using JavaScript, HTML, and CSS. 
+# Numerical Integration Calculator (Version 1.3.0)
+Thanks for checking out my project!  
 
-If you are not already viewing this project on my GitHub page you can do so [here](https://github.com/declanblanc/numInt)!
+My name is [Declan Blanchard](https://www.linkedin.com/in/declanblanc/) and I created this project for Professor Nikitovic's Calculus 2 Spring 2024 course!  
 
-You can also find me on [LinkedIn](https://www.linkedin.com/in/declanblanc/).
+With no prior experience in JavaScipt, HTML, or CSS, this project was an opportunity to challenge my ability to learn new languages and concepts on my own in a short period of time.  
+You can view the webpage [here](https://declanblanc.github.io/numInt) thanks to GitHub Pages.
